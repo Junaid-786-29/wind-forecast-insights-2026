@@ -1,0 +1,26 @@
+# ==============================================================================
+# WindForecast Analytics - Render Infrastructure as Code Blueprint
+# Reference: https://render.com/docs/blueprint-spec
+# ==============================================================================
+
+services:
+  - type: web
+    name: windforecast-backend
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: free
+    region: frankfurt
+    healthCheckPath: /api/v1/health
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: DAY_AHEAD_CUTOFF_HOUR_UTC
+        value: 10
+      - key: CORS_ORIGINS
+        sync: false
+        value: http://localhost:5173,http://localhost:3000
+      - key: PYTHONUNBUFFERED
+        value: "1"
+

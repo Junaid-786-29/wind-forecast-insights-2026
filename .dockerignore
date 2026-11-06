@@ -1,0 +1,21 @@
+.git
+.gitignore
+.env
+*.log
+.DS_Store
+
+# Python caches
+__pycache__
+*.py[cod]
+.pytest_cache
+.venv
+venv/
+
+# Node caches
+node_modules
+dist
+npm-debug.log*
+
+# Documentation & graphify caches
+graphify-out/cache
+
