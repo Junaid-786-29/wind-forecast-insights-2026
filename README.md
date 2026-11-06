@@ -95,7 +95,7 @@ To ensure accurate, domain-compliant analytics for UK energy purchasing teams, t
 ```bash
 # Clone the repository
 git clone https://github.com/Junaid-786-29/wind-forecast-insights-2026.git
-cd WindForecast-Analytics
+cd wind-forecast-insights-2026
 
 # (Optional) Copy example environment configuration
 cp .env.example .env
