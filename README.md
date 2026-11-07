@@ -246,7 +246,7 @@ This section provides a step-by-step guide to deploying **WindForecast Analytics
 ```
    ┌─────────────────────────────────────────────────────────┐
    │                    Vercel Frontend                      │
-   │           https://<your-app>.vercel.app                 │
+   │       https://wind-forecast-insights-2026.vercel.app/   │
    │               (React 19 + Vite SPA)                     │
    └───────────────────────────┬─────────────────────────────┘
                                │
@@ -255,7 +255,7 @@ This section provides a step-by-step guide to deploying **WindForecast Analytics
                                ▼
    ┌─────────────────────────────────────────────────────────┐
    │                     Render Backend                      │
-   │        https://<your-backend>.onrender.com              │
+   │    https://wind-forecast-insights-2026.onrender.com     │
    │      (FastAPI Docker Container on 0.0.0.0:$PORT)        │
    │            CORS_ORIGINS=<your-vercel-url>               │
    └───────────────────────────┬─────────────────────────────┘
